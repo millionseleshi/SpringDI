@@ -18,8 +18,7 @@ public class SpringDiApplication {
 
 		MyController myController=(MyController) context.getBean("myController");
 
-		myController.hello();
-
+		System.out.println(myController.hello());
 		System.out.println(context.getBean(PropertyInjectedController.class).greetingServiceImp.sayGreeting());
 		System.out.println(context.getBean(GetterInjectedController.class).sayHello());
 		System.out.println(context.getBean(ConstructorInjectedController.class).sayHello());
